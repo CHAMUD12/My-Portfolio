@@ -297,6 +297,34 @@ img{
     color: var(--title-color);
 }
 
+/* home info */
+.home__info{
+    display: grid;
+    row-gap: 2rem;
+}
+
+.home__info-title{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    font-weight: 400;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.home__info-description,
+.home__info-number{
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+
+.home__info-description{
+    padding-right: 4rem;
+}
+
+.home__info-number{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+}
 
 
 
