@@ -11,7 +11,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <!-- ----- swiper css ----- -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <!-- ----- css ----- -->
     <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -450,10 +450,10 @@
             <span class="section__subtitle">Most recent work</span>
 
             <div class="container section__border">
-                <div class="projects__container">
-                    <div>
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
                         <!-- project 1 -->
-                        <div class="projects__content">
+                        <div class="projects__content swiper-slide">
                             <img src="/assest/project2.jpg" alt="projects image" class="projects__img">
 
                             <div>
@@ -467,7 +467,7 @@
                         </div>
 
                         <!-- project 2 -->
-                        <div class="projects__content">
+                        <div class="projects__content swiper-slide">
                             <img src="/assest/project1.jpg" alt="projects image" class="projects__img">
 
                             <div>
@@ -481,7 +481,7 @@
                         </div>
 
                         <!-- project 3 -->
-                        <div class="projects__content">
+                        <div class="projects__content swiper-slide">
                             <img src="/assest/project3.jpg" alt="projects image" class="projects__img">
 
                             <div>
@@ -495,7 +495,7 @@
                         </div>
 
                         <!-- project 4 -->
-                        <div class="projects__content">
+                        <div class="projects__content swiper-slide">
                             <img src="/assest/project4.jpg" alt="projects image" class="projects__img">
 
                             <div>
@@ -508,6 +508,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- swiper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <!-- swiper pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -523,6 +534,7 @@
 
 
     <!-- ----- scrollreveal ----- -->
+    <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
 
 </body>
