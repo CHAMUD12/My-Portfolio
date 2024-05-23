@@ -218,6 +218,11 @@ img{
     bottom: 2rem;
 }
 
+/* Scroll section */
+.active-link{
+    color: var(--title-color);
+}
+
 /* ******************* HOME ******************* */
 .home__container{
     row-gap: 4rem;
