@@ -851,3 +851,21 @@ contact__button:hover i{
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
+
+/* ----- scroll bar ----- */
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(207, 4%, 75%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(207, 4%, 65%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(207, 4%, 55%);
+}
+
+
