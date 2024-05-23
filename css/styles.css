@@ -65,6 +65,7 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: background .4s; /*darkmood animation*/
 }
 
 h1,h2,h3{
@@ -106,6 +107,40 @@ body.dark-theme{
     --text-color: hsl(207, 4%, 65%);
     --body-color: hsl(207, 4%, 10%);
     --container-color: hsl(207, 4%, 12%);
+}
+
+/* ----- website some part color change, in dark mood ----- */
+.dark-theme .nav,
+.dark-theme .nav__menu{
+    background-color: var(--container-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+}
+
+.dark-theme .home__shape-wawes,
+.dark-theme .home__shape-circle,
+.dark-theme .qualification__img,
+.dark-theme .testimonial__img{
+    filter: invert(1);
+}
+
+.dark-theme .home__social-link{
+    /* color: var(--title-color); */
+}
+
+.dark-theme .section__border{
+    border-bottom: 1px solid hsl(207, 4%, 32%);
+}
+
+.dark-theme::-webkit-scrollbar{
+    background-color: hsl(207, 4%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(207, 4%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(207, 4%, 35%);
 }
 
 /* ----- reusable css classes ----- */
@@ -168,6 +203,7 @@ body.dark-theme{
     box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
     padding-inline: 1.5rem;
     border-radius: 3rem;
+    transition: background .4s; /*darkmood animation*/
 }
 
 .nav__logo,
@@ -271,6 +307,7 @@ body.dark-theme{
     justify-self: center;
     border-radius: 6.25rem;
     place-items: center;
+    transition: background .4s; /*darkmood animation*/
 }
 
 .home__perfil{
@@ -397,6 +434,7 @@ body.dark-theme{
     border-radius: 3rem;
     place-items: center;
     margin-bottom: 1rem;
+    transition: background .4s; /*darkmood animation*/
 }
 
 .skills__blob img{
@@ -504,6 +542,7 @@ body.dark-theme{
     text-align: center;
     padding: 3.5rem 1rem;
     border-radius: 7.25rem;
+    transition: background .4s; /*darkmood animation*/
 }
 
 .services__card i{
@@ -796,6 +835,7 @@ contact__button:hover i{
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
     padding: .35rem;
+    transition: background .4s; /*darkmood animation*/
 }
 
 .contact__form-area{
