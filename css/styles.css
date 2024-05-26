@@ -591,8 +591,7 @@ body.dark-theme{
 .card {
     perspective: 1000px;
     transition: transform 0.5s;
-    height: 13rem;
-    width: 17rem;
+    height: 13rem;   
 }
 
 .cover {
@@ -601,6 +600,7 @@ body.dark-theme{
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    border-radius: 0.5rem;
 }
 
 .card:hover .cover {
@@ -658,7 +658,7 @@ body.dark-theme{
     color: white;
     margin-bottom: 0.5rem;
     text-align: center;
-    padding: 5rem;
+    padding-top: 5.5rem;
     position: relative; 
     z-index: 1;
     backface-visibility: hidden; 
@@ -975,10 +975,28 @@ contact__button:hover i{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .projects__img{
-        width: 200px;
-        justify-self: center;
+    .projects__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        height: 192px;
+        width: 100%;
     }    
+
+}
+
+@media screen and (min-width: 341px) and (max-width: 576px) {
+    .projects__container {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .card {
+        height: 192px;
+        width: 272px;
+    }
 }
 
 /* medium device */
@@ -996,21 +1014,20 @@ contact__button:hover i{
         justify-content: center;
     }
 
-    .projects__container,
     .testimonial__container{
         width: 400px;
     }
+}
 
-    .projects__container{
-        overflow: hidden;
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .projects__container {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
     }
 
-    .projects__container .swiper-button-prev{
-        left: 1rem;
-    }
-
-    .projects__container .swiper-button-next{
-        right: 1rem;
+    .card {
+        height: 192px;
+        width: 230px;
     }
 }
 
@@ -1051,10 +1068,6 @@ contact__button:hover i{
     .qualification__container{
         justify-content: center;
         column-gap: 10rem;
-    }
-
-    .projects__container{
-        width: 500px;
     }
 
     .contact__form{
@@ -1272,33 +1285,6 @@ contact__button:hover i{
         border-radius: 8.25rem;
     }
 
-    /* project */
-    .projects__container{
-        width: 900px;
-    }
-
-    .projects__container .swiper-button-prev,
-    .projects__container .swiper-button-next{
-        font-size: 3rem;
-    }
-
-    .projects__container .swiper-button-prev{
-        left: -1rem;
-    }
-
-    .projects__container .swiper-button-next{
-        right: -1rem;
-    }
-
-    .projects__container .swiper-slide{
-        margin-bottom: 6.5rem;
-    }
-
-    .projects__img{
-        width: 320px;
-        margin-top: 2rem;
-    }
-
     /* testimonial */
     .testimonial__container{
         width: 566px;
@@ -1374,17 +1360,5 @@ contact__button:hover i{
     .footer__copy{
         margin-top: 5rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
