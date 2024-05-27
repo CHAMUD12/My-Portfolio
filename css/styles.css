@@ -528,6 +528,30 @@ body.dark-theme{
     opacity: .1;
 }
 
+.qualification__download {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.40rem 1rem;
+    font-size: var(--normal-font-size);
+    color: #fff;
+    background-color: var(--text-color-light);
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.qualification__download:hover {
+    background-color: var(--first-color-alt);
+}
+
+.qualification__download__text {
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+}
+
 /* ******************* Services ******************* */
 .services__container{
     row-gap: 2.5rem;
@@ -815,7 +839,7 @@ body.dark-theme{
     transition: transform .3s;
 }
 
-contact__button:hover i{
+.contact__button:hover i{
     transform: translateX(.25rem);
 }
 
