@@ -390,6 +390,85 @@ body.dark-theme{
     font-weight: var(--font-semi-bold);
 }
 
+/* add keyframe */
+@keyframes wobble {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(0px); }
+    75% { transform: translateX(3px); }
+    100% { transform: translateX(0px); }
+  }
+  
+  .home__blob {
+    animation: wobble 2s infinite ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#home:hover .home__title,
+#home:hover .home__perfil img,
+#home:hover .home__social-link,
+#home:hover .home__info-title,
+#home:hover .home__info-description,
+#home:hover .home__info-number {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#home:hover .home__title {
+    animation-name: fadeInUp;
+}
+
+#home:hover .home__perfil img {
+    animation-name: scaleIn;
+    animation-delay: 0.3s;
+}
+
+#home:hover .home__social-link {
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+}
+
+#home:hover .home__info-title,
+#home:hover .home__info-description,
+#home:hover .home__info-number {
+    animation-name: fadeInUp;
+    animation-delay: 0.7s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* ******************* Skills ******************* */
 
 .skills__container{
@@ -474,6 +553,104 @@ body.dark-theme{
     }
 }
 
+/* add keyframe */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bounce-skills{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translate(0);
+    }
+    60%{
+        transform: translateY(-3px);
+    }
+    80%{
+        transform: translate(0);
+    }
+}
+
+#skills:hover .skills__title,
+#skills:hover .skills__data,
+#skills:hover .skills__blob,
+#skills:hover .skills__name,
+#skills:hover .skills__subtitle {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#skills:hover .skills__title {
+    animation-name: fadeInUp;
+}
+
+#skills:hover .skills__data {
+    animation-name: scaleIn;
+    animation-delay: 0.3s;
+}
+
+#skills:hover .skills__blob {
+    animation-name: rotateIn;
+    animation-delay: 0.5s;
+}
+
+#skills:hover .skills__name {
+    animation-name: fadeIn;
+    animation-delay: 0.7s;
+}
+
+#skills:hover .skills__subtitle {
+    animation-name: fadeInUp;
+    animation-delay: 0.9s;
+}
+
+.skills__blob:hover img {
+    animation: bounce-skills .6s;
+}
+
 /* ******************* Qualification ******************* */
 .qualification{
     position: relative;
@@ -552,6 +729,140 @@ body.dark-theme{
     color: var(--title-color);
 }
 
+/* add keyframe */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-360deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#qualification:hover .qualification__title,
+#qualification:hover .qualification__info div,
+#qualification:hover .qualification__img,
+#qualification:hover .qualification__download {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#qualification:hover .qualification__title {
+    animation-name: fadeInUp;
+}
+
+#qualification:hover .qualification__info div:nth-child(odd) {
+    animation-name: slideInLeft;
+}
+
+#qualification:hover .qualification__info div:nth-child(even) {
+    animation-name: slideInRight;
+}
+
+#qualification:hover .qualification__img {
+    animation-name: rotateIn;
+    animation-delay: 0.5s;
+}
+
+#qualification:hover .qualification__download {
+    animation-name: zoomIn;
+    animation-delay: 1s;
+}
+
+#qualification:hover .qualification__title,
+#qualification:hover .qualification__subtitle {
+    animation-name: slideInBottom;
+}
+
+#qualification:hover .qualification__info div {
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+}
+
+#qualification:hover .qualification__info div:hover {
+    animation-name: bounceIn;
+    animation-duration: 0.6s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* ******************* Services ******************* */
 .services__container{
     row-gap: 2.5rem;
@@ -603,6 +914,20 @@ body.dark-theme{
 
 .services__card:hover .services__border{
     opacity: 1;
+}
+
+/* add keyframe */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.services__card:hover {
+    animation: zoomIn 0.5s forwards;
 }
 
 /* ******************* Projects ******************* */
@@ -839,6 +1164,37 @@ body.dark-theme{
     font-weight: initial;
 }
 
+/* add keyframe */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact:hover .contact__content:nth-child(1) {
+    animation: slideInFromLeft 0.5s forwards;
+}
+
+.contact:hover .contact__content:nth-child(2) {
+    animation: slideInFromRight 0.5s forwards;
+}
+
 /* ----- footer ----- */
 
 .footer__container{
@@ -894,6 +1250,17 @@ body.dark-theme{
     margin-top: 4.5rem;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+}
+
+/* add keyframe */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.footer__copy {
+    animation: fadeInOut 3s ease-in-out infinite;
 }
 
 /* ----- scroll bar ----- */
