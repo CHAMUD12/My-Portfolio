@@ -712,74 +712,6 @@ body.dark-theme{
     background-image: url('/assest/project/webpos.jpg');
 }
 
-/* ******************* Testimonial ******************* */
-.testimonial{
-    position: relative;
-}
-
-.testimonial__content{
-    text-align: center;
-}
-
-.testimonial__description{
-    font-family: var(--title-font);
-    color: var(--title-color);
-    margin-bottom: 1.5rem;
-}
-
-.testimonial__name{
-    font-family: var(--body-font);
-    font-style: var(--small-font-size);
-    margin-top: .25rem;
-}
-
-.testimonial__subtitle{
-    font-style: var(--smaller-font-size);
-    color: var(--text-color-light);
-}
-
-.testimonial__img{
-    width: 70px;
-    transform: rotate(30deg);
-    position: absolute;
-    top: 5rem;
-    right: -1.5rem;
-    opacity: .1;
-}
-
-/* swiper */
-.testimonial__container .swiper-slide{
-    margin-bottom: 4rem;
-}
-
-.testimonial__container .swiper-button-prev::after,
-.testimonial__container .swiper-button-next::after{
-    content: '';
-}
-
-.testimonial__container .swiper-button-prev,
-.testimonial__container .swiper-button-next{
-    font-size: 2rem;
-    color: var(--title-color);
-    width: initial;
-    height: initial;
-    top: initial;
-    bottom: .5rem;
-}
-
-.testimonial__container .swiper-button-prev{
-    left: calc(50% - 3rem);
-}
-
-.testimonial__container .swiper-button-next{
-    right: calc(50% - 3rem);
-}
-
-.testimonial__container .swiper-button-disabled{
-    opacity: initial;
-    color: var(--text-color-light);
-}
-
 /* ******************* Contact ******************* */
 .contact__container{
     row-gap: 3.5rem;
@@ -1036,10 +968,6 @@ body.dark-theme{
 
     .skills__container{
         justify-content: center;
-    }
-
-    .testimonial__container{
-        width: 400px;
     }
 }
 
@@ -1307,39 +1235,6 @@ body.dark-theme{
         width: 265px;
         height: 365px;
         border-radius: 8.25rem;
-    }
-
-    /* testimonial */
-    .testimonial__container{
-        width: 566px;
-    }
-
-    .testimonial__container .swiper-button-prev,
-    .testimonial__container .swiper-button-next{
-        font-size: 2.5rem;
-    }
-
-    .testimonial__container .swiper-button-prev{
-        left: calc(50% - 5rem);
-    }
-
-    .testimonial__container .swiper-button-next{
-        right: calc(50% - 5rem);
-    }
-
-    .testimonial__container .swiper-slide{
-        margin-bottom: 6rem;
-    }
-
-    .testimonial__description{
-        font-size: var(--h2-font-size);
-        margin-bottom: 2rem;
-    }
-
-    .testimonial__img{
-        width: 200px;
-        top: 13rem;
-        right: 4rem;
     }
 
     /* contact */
